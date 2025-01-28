@@ -11,16 +11,19 @@ export default function Auth() {
     setError(null);
 
     try {
-      // Redirect to GitHub OAuth sign-in
-      const { user, error } = await supabase.auth.signIn(
-        { provider: "github" },
-        { redirectTo: window.location.origin }
-      );
+      const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: 'github',
+        options: {
+          redirectTo: `${window.location.origin}/projectform`
+        }
+      });
 
       if (error) throw error;
-      // Here, you can handle the user data (set the user in state, etc.)
-      console.log(user);
+      
+      // Success will automatically redirect to GitHub
+      console.log('Auth response:', data);
     } catch (error) {
+      console.error('Error:', error);
       setError("Error signing in with GitHub: " + error.message);
     } finally {
       setLoading(false);
@@ -37,7 +40,7 @@ export default function Auth() {
       >
         {loading ? "Loading..." : "Sign in with GitHub"}
       </button>
-      {error && <p className="text-red-500">{error}</p>}
+      {error && <p className="text-red-500 mt-2">{error}</p>}
     </div>
   );
 }

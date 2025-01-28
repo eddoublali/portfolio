@@ -1,5 +1,5 @@
-import Title from "./Title";
-import img from "../assets/1.jpeg";
+import Title from "../Title";
+import img from "../../assets/1.jpeg";
 import { CalendarSync, LetterText, Paintbrush } from "lucide-react";
 function About() {
   const aboutSections = [
@@ -13,7 +13,7 @@ function About() {
       id: 2,
       title: "Développeur Backend",
       description:
-        "Je maîtrise les bases du développement backend pour créer des APIs robustes.",
+        "Je suis un développeur backend avec une bonne expérience.",
       icon: <CalendarSync className="text-accent scale-150" />,
     },
     {

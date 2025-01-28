@@ -1,14 +1,12 @@
 import { Mail } from "lucide-react";
-import img from '../assets/1.jpeg'
+import img from '../../assets/1.jpeg'
 
 export default function Home() {
   return (
     <div className="flex flex-col-reverse md:flex-row justify-around items-center md:my-32 my-10" id="Home">
       <div className="flex flex-col">
-        <h1 className="text-5xl md:text-6xl font-bold text-center md:text-left mt-4 md:mt-0">
-          Bon jour,
-          <br />
-          je suis <span className="text-accent">Hedraftech</span>
+        <h1 className="text-5xl md:text-xl font-bold text-center md:text-left mt-4 md:mt-0">
+          Bon jour,je suis <br /><span className="text-accent md:text-3xl ">ZAKARYA EDDOUBLALI</span>
         </h1>
         <p className="my-4 text-md text-center md:text-left">
           Je suis un développeur fullstack <br />

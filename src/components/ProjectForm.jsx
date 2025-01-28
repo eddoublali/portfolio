@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { supabase } from "./supabaseClient";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-dom";
 
 export default function ProjectForm() {
   const [formData, setFormData] = useState({

@@ -2,7 +2,7 @@ import Title from "./Title";
 import { useState, useEffect } from "react";
 import { supabase } from "../components/supabaseClient";
 import { Pencil, Trash2, Eye, Github, Video } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-dom";
 
 export default function ProjectsTable() {
   const [projects, setProjects] = useState([]);

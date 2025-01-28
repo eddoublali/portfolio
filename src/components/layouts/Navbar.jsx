@@ -3,7 +3,7 @@ import { Podcast } from "lucide-react";
 
 import { supabase } from "../supabaseClient";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-dom";
 
 const Navbar = ({ user }) => {
   const [loading, setLoading] = useState(false);

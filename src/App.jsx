@@ -61,7 +61,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar user={user} />
-      <div className="flex-grow p-5">
+      <div className="flex-grow p-5 mt-20">
         <Outlet />
       </div>
       <Footer />

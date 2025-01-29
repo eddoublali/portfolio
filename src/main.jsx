@@ -6,6 +6,7 @@ import "./index.css";
 import Celent from "./components/Celient";
 import ProjectForm from "./components/ProjectForm";
 import Project from "./components/Project";
+import About from "./components/celient/About";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,8 @@ const router = createBrowserRouter([
       {
         path: "/project",
         element: <Project />
-      },
+      }
+      ,
       {
         path: "*",
         element: <Celent />

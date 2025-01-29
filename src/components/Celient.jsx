@@ -2,6 +2,7 @@ import Experiences from "./celient/Experiences";
 import Home from "./celient/Home";
 import Projects from "./celient/Projects";
 import About from "./celient/About";
+import WhatsAppButton from "./celient/WhatsAppButton";
 export default function App() {
   return (
     <div>
@@ -14,7 +15,7 @@ export default function App() {
          <Experiences/>
          <Projects/>
        </div>
-
+<WhatsAppButton/>
     </div>
 
     
